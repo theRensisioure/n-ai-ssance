@@ -1,68 +1,86 @@
 # n-ai-ssance
 
-A **public Grok skill library**. MIT.
+**v1.0** · [MIT](LICENSE) · [CI](https://github.com/theRensisioure/n-ai-ssance/actions)
 
-Five portable skills for people who work with coding agents and keep losing the thread: map a session (do not dump the chat), scan what you have, reconstruct a day from disk, fence intent, land a capture with a manifest.
+A public Grok skill library for people who work with coding agents and lose the thread.
 
-No API keys. No network. No desktop suite required.
+It gives you five portable procedures: map a session instead of dumping the chat, list what you have, reconstruct a day from files on disk, write a goal fence, and land a capture with a manifest.
 
-**License:** [MIT](LICENSE).  
-**Public home:** [theRensisioure/n-ai-ssance](https://github.com/theRensisioure/n-ai-ssance).  
-**Copied from** private `Zychs/ssfs` (scanner-shaped skills). Original stays. See [SOURCE.md](SOURCE.md).  
-**Not** private `Zychs/naissance` (a different, closed prompt vault).
+No API keys. No network calls. No desktop suite.
+
+## Why
+
+Agent work leaves large transcripts and many session folders. Pasting everything is expensive. Closing a chat can feel like losing the day. Starting without a written goal invites thrash. Temporary captures disappear.
+
+n-ai-ssance is those habits as installable Grok skills.
 
 ## Skills
 
-| Slash | Job |
-|-------|-----|
-| `/session-map` | Map a session — not a chat dump |
-| `/scan-sessions` | List sessions without a board server |
-| `/reconstruct` | Re-member a day from files on disk |
-| `/intent` | Outcome · surface · fence packet |
-| `/durable-land` | Copy-first stamped land + MANIFEST |
+- `/session-map` — identity, a copy-ready relay line, user spine, paths. Not a transcript.
+- `/scan-sessions` — inventory of local Grok, Claude, and Cursor sessions. No board server.
+- `/reconstruct` — re-read a day from files on disk. Nothing is streamed or cached.
+- `/intent` — write outcome, surface, and fence before the work grows.
+- `/durable-land` — copy first into a stamped folder with `MANIFEST.json` and `INDEX.md`.
 
-## Install (Grok)
+## Install
 
-1. Clone this repo (or copy `skills/`).
-2. Run:
+Requires Python 3 and a Grok skills directory.
 
-```text
+```bash
+git clone https://github.com/theRensisioure/n-ai-ssance.git
+cd n-ai-ssance
 python skills/install_to_grok.py
 ```
 
-That copies each skill plus `_lib` into `%USERPROFILE%\.grok\skills\` (Windows) or `~/.grok/skills/` (macOS / Linux). Override with `NAISSANCE_GROK_SKILLS` (or `SSFS_GROK_SKILLS`).
+This copies each skill plus `_lib` into:
 
-3. Smoke: `/session-map` · `/scan-sessions` · `/reconstruct` · `/intent` · `/durable-land`
+- Windows: `%USERPROFILE%\.grok\skills\`
+- macOS / Linux: `~/.grok/skills/`
+
+Override the destination with `N_AI_SSANCE_GROK_SKILLS`.
+
+Then, in Grok: `/session-map` · `/scan-sessions` · `/reconstruct` · `/intent` · `/durable-land`
+
+You can also run the scripts under `skills/*/scripts/` without installing.
+
+## Verify
+
+```bash
+python scripts/sterile-check.py
+python -m pytest tests -q
+```
+
+CI on `main` runs the same checks.
 
 ## What this is not
 
-- Not Artifact Scanner’s window (`board.html`, `:8765`, suite flip/zip)
-- Not Circadia (the Zig alarm daemon — **not done**)
-- Not Sesefus (the voice journal)
-- Not AyTree (version control for dyslexics)
-- Not a claim to solve every workflow
+n-ai-ssance is not a session host, not a voice journal, not an alarm daemon, and not an editor. It does not replace Artifact Scanner, Circadia, Sesefus, or AyTree. Those are separate products. The skills work without them.
 
-Those are **siblings**. Skills work without them.
+It is not a hosted memory service. It does not claim to solve every workflow.
 
-## Breadcrumbs to the paid / richer hosts
+## Related products
 
-n-ai-ssance is the free public trail. When a skill is not enough, the host is:
+When a skill is not enough, these are the sibling hosts — optional, not required:
 
-- **Artifact Scanner** — Windows finder. Maps sessions in a native window. Nearly done. [Zychs/artifact-scanner](https://github.com/Zychs/artifact-scanner)
-- **Circadia** — keeps time. Scheduler wired. Product not finished. No public GitHub remote yet; do not pretend it shipped
-- **Sesefus** — voice journal. [Zychs/sesefus](https://github.com/Zychs/sesefus)
-- **AyTree** — version control for dyslexics. [Zychs/AyTree](https://github.com/Zychs/AyTree)
+- [Artifact Scanner](https://github.com/Zychs/artifact-scanner) — native Windows finder. Maps sessions in a window. Nearly done.
+- Circadia — local timekeeper. Scheduler exists; the product is not finished. No public repository yet.
+- [Sesefus](https://github.com/Zychs/sesefus) — voice journal.
+- [AyTree](https://github.com/Zychs/AyTree) — version control for dyslexic readers.
 
-Do not swallow them into one app. Do not require them to use these skills. Marketing lives on the [portfolio Instruments page](https://zychs.github.io/pages/instruments.html) and [MARKETING.md](https://github.com/Zychs/zychs.github.io) (local tree if Pages is not live).
+## Documentation
 
-## Sterile (hard law)
+- [docs/FOR-READERS.md](docs/FOR-READERS.md) — longer overview
+- [docs/use-cases/](docs/use-cases/) — synthetic scenarios
+- [PRODUCT.md](PRODUCT.md) — scope lock
+- [STERILE.md](STERILE.md) — no secrets, transcripts, or personal dumps
+- [docs/INDEX.md](docs/INDEX.md) — full map
 
-No live sessions, keys, journal audio, or real home-path dumps.  
-`python scripts/sterile-check.py` must exit 0 before push.  
-[STERILE.md](STERILE.md).
+## Contribute
 
-## Docs
+Keep the tree sterile. Run `python scripts/sterile-check.py` before every push. Do not commit live sessions, keys, journal audio, or real home-directory dumps.
 
-- Calm overview: [docs/FOR-READERS.md](docs/FOR-READERS.md)
-- Product lock: [PRODUCT.md](PRODUCT.md)
-- Use cases (synthetic): [docs/use-cases/](docs/use-cases/)
+## License
+
+[MIT](LICENSE). Copyright theRensisioure and Zychs, 2026.
+
+This public library is not the private prompt vault also historically named naissance.
