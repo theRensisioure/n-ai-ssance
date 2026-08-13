@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Copy Naissance skills + _lib into ~/.grok/skills/.
+"""Copy n-ai-ssance skills + _lib into ~/.grok/skills/.
 
-Env: NAISSANCE_GROK_SKILLS, then SSFS_GROK_SKILLS (alias), then ~/.grok/skills.
+Env: N_AI_SSANCE_GROK_SKILLS, then NAISSANCE_GROK_SKILLS, then SSFS_GROK_SKILLS, then ~/.grok/skills.
 """
 from __future__ import annotations
 
@@ -12,7 +12,8 @@ from pathlib import Path
 
 PACK = Path(__file__).resolve().parent
 DEST = Path(
-    os.environ.get("NAISSANCE_GROK_SKILLS")
+    os.environ.get("N_AI_SSANCE_GROK_SKILLS")
+    or os.environ.get("NAISSANCE_GROK_SKILLS")
     or os.environ.get("SSFS_GROK_SKILLS")
     or (Path.home() / ".grok" / "skills")
 )

@@ -1,6 +1,6 @@
-# Naissance documentation
+# n-ai-ssance documentation
 
-Public Grok skill library (MIT). Formerly packaged as SSFS on a private remote.
+Public Grok skill library (MIT). Formerly packaged as SSFS on a private remote. Display name is **n-ai-ssance**.
 
 | Track | Path | Audience |
 |-------|------|----------|

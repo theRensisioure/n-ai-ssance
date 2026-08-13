@@ -1,4 +1,4 @@
-# Naissance
+# n-ai-ssance
 
 A **public Grok skill library**. MIT.
 
@@ -7,7 +7,7 @@ Five portable skills for people who work with coding agents and keep losing the 
 No API keys. No network. No desktop suite required.
 
 **License:** [MIT](LICENSE).  
-**Public home:** [theRensisioure/naissance](https://github.com/theRensisioure/naissance).  
+**Public home:** [theRensisioure/n-ai-ssance](https://github.com/theRensisioure/n-ai-ssance).  
 **Copied from** private `Zychs/ssfs` (scanner-shaped skills). Original stays. See [SOURCE.md](SOURCE.md).  
 **Not** private `Zychs/naissance` (a different, closed prompt vault).
 
@@ -46,7 +46,7 @@ Those are **siblings**. Skills work without them.
 
 ## Breadcrumbs to the paid / richer hosts
 
-Naissance is the free public trail. When a skill is not enough, the host is:
+n-ai-ssance is the free public trail. When a skill is not enough, the host is:
 
 - **Artifact Scanner** — Windows finder. Maps sessions in a native window. Nearly done. [Zychs/artifact-scanner](https://github.com/Zychs/artifact-scanner)
 - **Circadia** — keeps time. Scheduler wired. Product not finished. No public GitHub remote yet; do not pretend it shipped

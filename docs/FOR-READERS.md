@@ -1,6 +1,6 @@
 # Working with agent sessions without losing the thread
 
-**Naissance** is a public Grok skill library (MIT) — a small set of practices for people who use coding agents heavily and need **reliable handoff, recovery, and scope control**. It draws on ideas proven in local session-finding tools, but it does **not** require a desktop suite, a local web server, or a particular product install. The skills work without Artifact Scanner, Circadia, Sesefus, or AyTree. Those are sibling products; this page is the free trail.
+**n-ai-ssance** is a public Grok skill library (MIT) — a small set of practices for people who use coding agents heavily and need **reliable handoff, recovery, and scope control**. It draws on ideas proven in local session-finding tools, but it does **not** require a desktop suite, a local web server, or a particular product install. The skills work without Artifact Scanner, Circadia, Sesefus, or AyTree. Those are sibling products; this page is the free trail.
 
 This page is the calm overview. For product boundaries, see [PRODUCT.md](../PRODUCT.md). For install, see [README.md](../README.md).
 

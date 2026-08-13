@@ -3,7 +3,8 @@
 ## [Unreleased]
 
 ### Changed
-- **Public Naissance pack (2026-08-12)** — this tree is the MIT public Grok skill library on `theRensisioure/naissance`. Copied from private `Zychs/ssfs` (original left in place). Not a rename of private `Zychs/naissance`. Breadcrumbs to sibling paid/richer hosts. See SOURCE.md.
+- **Name: n-ai-ssance (2026-08-12)** — public face and GitHub slug. Private `Zychs/naissance` unchanged.
+- **Public n-ai-ssance pack (2026-08-12)** — MIT public Grok skill library on `theRensisioure/n-ai-ssance`. Copied from private `Zychs/ssfs` (original left in place). Not a rename of private `Zychs/naissance`. Breadcrumbs to sibling paid/richer hosts. See SOURCE.md.
 
 ### Added
 

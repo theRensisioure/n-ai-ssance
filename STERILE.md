@@ -1,6 +1,6 @@
 # STERILE — what must never land in this repo
 
-**Law:** Naissance is a **public community skill pack**. Every commit and every push must be free of **potent / sensitive / personal** data. Public remote is **especially** not permission to dump life into git.
+**Law:** n-ai-ssance is a **public community skill pack**. Every commit and every push must be free of **potent / sensitive / personal** data. Public remote is **especially** not permission to dump life into git.
 
 Agents (including Grok) **must refuse** to `git add` / `commit` / `push` material that fails this list. Prefer failing the step over “just this once.”
 

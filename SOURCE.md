@@ -7,4 +7,4 @@ This public pack was **copied** from the private scanner-skills tree.
 - **Original left in place.** Nothing was moved or deleted.
 - **Not the same repo as** private `Zychs/naissance` (LeadLogic / Circadia systems prompts). Do not merge those trees.
 
-Public face: **Naissance** — Grok skill library, MIT, `theRensisioure/naissance`.
+Public face: **n-ai-ssance** — Grok skill library, MIT, `theRensisioure/n-ai-ssance`.

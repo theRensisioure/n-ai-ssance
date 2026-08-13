@@ -1,8 +1,8 @@
-# Naissance — product lock
+# n-ai-ssance — product lock
 
 **One sentence:** A public MIT Grok skill library — Artifact Scanner’s most useful *procedures*, portable, for an underbuilt skill community.
 
-**Home:** `github.com/theRensisioure/naissance` (public).  
+**Home:** `github.com/theRensisioure/n-ai-ssance` (public).  
 **Lineage:** copied from `Zychs/ssfs`. Not a rename of private `Zychs/naissance`.
 
 ## Audience
@@ -11,7 +11,7 @@ Grok users (and agents) who need finder / map / reconstruct / land / intent disc
 
 ## Ring law
 
-- **Naissance skills** = portable agent procedures + optional thin scripts (this repo)
+- **n-ai-ssance skills** = portable agent procedures + optional thin scripts (this repo)
 - **Artifact Scanner** = optional rich host; skills must work **without** it
 - **Circadia / Sesefus / AyTree** = sibling products; breadcrumbs, not dependencies
 

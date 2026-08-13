@@ -1,6 +1,6 @@
 # skills/
 
-Naissance pack. Install into Grok skills home (copy each folder):
+n-ai-ssance pack. Install into Grok skills home (copy each folder):
 
 Install into Grok skills home (copy each folder):
 
