@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.0] — 2026-08-12
+
+Five skills + sterile-check + install helper. Public remote: `theRensisioure/n-ai-ssance`.
+
 ## [Unreleased]
 
 ### Changed

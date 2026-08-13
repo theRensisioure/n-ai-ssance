@@ -1,0 +1,28 @@
+name: v1
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  v1-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test runner
+        run: python -m pip install pytest
+      - name: Sterile
+        run: python scripts/sterile-check.py
+      - name: Pytest (drives real skill CLIs)
+        run: python -m pytest tests -q --tb=short
+      - name: Install helper into temp dest
+        run: |
+          export N_AI_SSANCE_GROK_SKILLS="$RUNNER_TEMP/grok-skills"
+          python skills/install_to_grok.py
+          test -d "$N_AI_SSANCE_GROK_SKILLS/session-map"
+          test -d "$N_AI_SSANCE_GROK_SKILLS/_lib"
