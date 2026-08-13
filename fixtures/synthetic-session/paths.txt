@@ -1,0 +1,3 @@
+src/auth/middleware.ts
+src/auth/redirect.test.ts
+docs/auth-notes.md

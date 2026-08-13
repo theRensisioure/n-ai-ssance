@@ -1,0 +1,38 @@
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
+.venv/
+.env
+.env.*
+*.log
+
+# secrets / keys
+*.pem
+*.key
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+credentials.json
+**/secrets/**
+
+# session / agent residue (never pack)
+chat_history.jsonl
+prompt_history.jsonl
+events.jsonl
+hunk_records.jsonl
+btw_history.jsonl
+updates.jsonl
+**/compaction/**
+**/.grok/sessions/**
+**/.claude/**/projects/**
+
+# personal / local life
+confirmations.csv
+**/durable-archive/**
+**/chat-governance/archives/**
+**/days/**
+*.wav
+*.mp3
+*.m4a
