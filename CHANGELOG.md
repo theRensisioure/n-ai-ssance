@@ -7,6 +7,7 @@ Five skills + sterile-check + install helper. Public remote: `theRensisioure/n-a
 ## [Unreleased]
 
 ### Docs
+- **Wiki Home (2026-08-12)** — first plate title *n-ai-ssance · rain into order*. Hybrid negentropic-matrix. Source: `wiki/Home.md` (GitHub wiki remote is empty until the first page is created in the UI).
 - **Public README (2026-08-12)** — professional clone door: problem, five skills, install, verify, scope, related products. House lineage left in SOURCE.md.
 
 ### Changed

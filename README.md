@@ -74,6 +74,7 @@ When a skill is not enough, these are the sibling hosts — optional, not requir
 - [PRODUCT.md](PRODUCT.md) — scope lock
 - [STERILE.md](STERILE.md) — no secrets, transcripts, or personal dumps
 - [docs/INDEX.md](docs/INDEX.md) — full map
+- [wiki/Home.md](wiki/Home.md) — first wiki plate: *rain into order* (negentropic-matrix)
 
 ## Contribute
 
